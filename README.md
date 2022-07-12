@@ -6,3 +6,5 @@ This Just Sample Program of Node.JS Package
 Nodemailer is a module for Node.js applications to allow easy as cake email sending
 ### svg-captcha
 Generate svg captcha in node.js
+### sharp
+High performance Node.js image processing

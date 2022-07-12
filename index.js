@@ -2,6 +2,9 @@ const fs = require("fs");
 
 const nodemailer = require("nodemailer");
 const svgCaptcha = require("svg-captcha");
+const sharp = require("sharp");
+
+const example_image = "./dist/img/example.jpeg";
 
 // use node_mailer
 const send_email = async () => {
@@ -43,4 +46,14 @@ const create_captcha = () => {
     if (err) throw err;
     console.log("File is created successfully.");
   });
+};
+
+// use sharp
+const resize_image = () => {
+  sharp(example_image)
+    .resize(900, 900)
+    .toFile("output.webp", (err, info) => {
+      console.log(info);
+      console.log(err);
+    });
 };
