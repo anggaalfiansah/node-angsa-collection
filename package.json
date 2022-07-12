@@ -1,0 +1,11 @@
+{
+  "name": "node-angsa-collection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Angga Alfiansah",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.7.7",
+    "svg-captcha": "^1.4.0"
+  }
+}
